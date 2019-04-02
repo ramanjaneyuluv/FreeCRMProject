@@ -8,11 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import RootClass.RootClassCRM;
+import LoadProperties.LoadProperties;
+import RootClass.BrowserSetup;
 
-public class POMLoginPage extends RootClassCRM{
+public class POMLoginPage extends BrowserSetup{
 	
-	public static Properties prop;
+	public static LoadProperties prop;
 	public static WebDriver driver;
 	
 	public POMLoginPage() {

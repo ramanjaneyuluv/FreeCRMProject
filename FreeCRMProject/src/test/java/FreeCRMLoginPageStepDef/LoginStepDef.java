@@ -1,22 +1,28 @@
 package FreeCRMLoginPageStepDef;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import POMLoginPage.POMLoginPage;
-import RootClass.RootClassCRM;
+import RootClass.BrowserSetup;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LoginStepDef extends RootClassCRM{
+public class LoginStepDef{
 	
 	POMLoginPage login;
+	BrowserSetup browser;
 	
-	public LoginStepDef() {
-		super();
-	}
+//	public LoginStepDef() {
+//		super();
+//	}
 	
-	@Given("^usl for FreeCRM$")
+	@Given("^url for FreeCRM$")
 	public void usl_for_FreeCRM() throws Throwable {
+		browser.initializationBrowserName("browser", "config");
 		login=new POMLoginPage();
+	
 		
 	 
 	}
